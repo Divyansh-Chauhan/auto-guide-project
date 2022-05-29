@@ -6,7 +6,7 @@ Greetings,
 This website has been made to solve problem statement 2, that is the "data analysis" project. 
 
 
-Now the steps to Run the website:
+#####Now the steps to Run the website:
 
 -->  pip install requirements.txt
 
@@ -15,7 +15,7 @@ if any error occurs in installing wordcloud library kindly Try these steps:
 Download the .whl file compatible with your Python version and your windows distribution (32bit or 64bit) from here
 cd to the file path
 Run this command  
--->  "python -m pip install <filename>"
+>  "python -m pip install <filename>"
 
 then once requirements are installed. Kindly run the "app.py" and open the website through the link in the terminal.
  
