@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AG-Launchtime Analysis</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for( 'static', filename='styles.css')}}" rel="stylesheet" />
+    </head>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Auto Guide</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('index.ind')}}">Home</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('specification.spec')}}">Car Specifications</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('segment.seg')}}">Customer Segmentation</a></li> 
+                <li class="sidebar-nav-item"><a href="{{url_for('location.loc')}}">Location Analysis</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('timing.times')}}">Launch Time</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Launch Time Analysis</h1>
+                <h3 class="mb-5"><em>Understand the perfect time to launch a car!</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+            </div>
+        </header>
+
+         <!-- Content-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-9 px-lg-9">
+                <div class="row gx-9 gx-lg-9">
+                    <div class="col-lg-12">
+                        <!-- What is the prefect time to launch-->
+                        <h2>What is the perfect launch time for automobiles?</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            Once a product is made and it is ready to be sold, one needs to plan the timeline as to when it's supposed 
+                            to be launched on the basis of verious parameters: Occasions, Festivals, Consumer sentiment, brand image 
+                            at that time etc.
+                            <br><br>
+
+                        
+                        <br>
+                        <h2>Why it's important to launch a product at a specific time?</h2>
+                        <br>
+                        <p class="lead mb-5">
+                         Launch time can make or break a product.
+                            if you launch your product in a time where people don't buy that product. 
+                            for example: launching an AC in winters. What happens is that the AC loses it's launch hype.
+                            <br><br>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                     
+        <!-- Segmentation Button-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="mb-5">Understanding the launch time analysis</h2>
+                    
+                    <br>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Launch time analysis-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-9 px-lg-9">
+                <div class="row gx-9 gx-lg-9">
+                    <div class="col-lg-12">
+                        <h2>Launch time analysis of your brand</h2>
+                        <br>
+                        <p class="lead mb-5">
+                           Marketing is the biggest hurdle when deciding a launch date along with understanding where 
+                           the competition stands
+
+                            <br> Therefore launching a product according to that is important. So to accomplish this 
+                            the best method is through understanding the <strong>feelings of the market.</strong?
+
+
+                            <br><br>
+                                But the question is how do you do that?
+                            
+                        
+
+                      
+                      
+
+
+                <hr><br><br>
+                        <h2>Sentiment Prediction </h2>
+                        <br>
+                        <p class="lead mb-5">
+
+                            The best place to learn the sentiments of the market is through Twitter, there you can see what everyone 
+                            is saying. What all can you achieve from twitter sentiment analysis:
+
+                            <br><br>
+                                1. What people are saying about your competiton.
+                            <br>
+                                2. What is the market sentiment towards the product that you're trying to launch.
+                            <br>
+                                3. What are people saying about your products. 
+                                
+                            <br><br>
+
+                            Now to achieve all this, just type in the name of the company or person for whom 
+                            you want to check the market sentiment.
+
+                            <br>
+                            After that type in the number of tweets that you want to assess the results upon.
+                            The tweet collection will start from the moment you press enter.
+
+                            <br><br> sit back and relax until the result is produced.
+                            
+
+                        </p>   
+                            <br><br>
+                            <form method="POST">
+                                <p>Input your company name & number of tweets: </p><br>
+                                <p> input company name: </p>
+                                <input name ="name"><br><br>
+                                <p> input number of tweets: </p>
+
+                                <input name ="tweet">
+                                
+                                
+                                <input type = "submit">
+                            </form>    
+                 
+                            <br><br><br>
+                            <hr>
+                            <br>
+                        <p class="lead-mb5">      
+                            Now to analyse the result:
+                            <br>
+
+                            1. The wordcloud shows what people are talking about your company, 
+                                through <strong>negative, neutral and positive</strong> emotions of the 
+                                words.
+                            <br>
+                            2. The first pie chart shows rating for that given tweet,
+                            it's exactly like zomato. Better rating means good sentiment, worse rating means bad sentiment.
+
+                            <br>
+                            3. The second pie chart shows segmentation of your tweets to get a demographical understanding of your product.
+                            <br><br>
+                            from these pie charts and wordclouds you can see how ready the market is for your product and what all changes 
+                            would they want in the product before launching. Therefore you can launch your product more wisely
+
+                                
+
+
+
+                            <br><br>
+                            
+                             
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Scroll to Top Button-->
+         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+         <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="{{url_for( 'static', filename='scripts.js')}}"></script>
+     </body>
+ </html>

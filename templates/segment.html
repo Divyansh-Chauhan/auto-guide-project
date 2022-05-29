@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AG-Customer Segmentation</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for( 'static', filename='styles.css')}}" rel="stylesheet" />
+    </head>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Auto Guide</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('index.ind')}}">Home</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('specification.spec')}}">Car Specifications</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('segment.seg')}}">Customer Segmentation</a></li> 
+                <li class="sidebar-nav-item"><a href="{{url_for('location.loc')}}">Location Analysis</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('timing.times')}}">Launch Time</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Customer Segmentation</h1>
+                <h3 class="mb-5"><em>Understand your Customer!</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+            </div>
+        </header>
+
+         <!-- Content-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-9 px-lg-9">
+                <div class="row gx-9 gx-lg-9">
+                    <div class="col-lg-12">
+                        <!-- What is Customer Segmentation-->
+                        <h2>What is Customer Segmentation?</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            Customer segmentation is the process of analysing and understanding 
+                            the customer in coherence to your industry. So as to catalogue
+                            those customers into subgroups according to their attributes (age, sex etc.) and preferences.
+                        </p>
+                        <br>
+                        <h2>Why it's important for the automotive industry to segment customers?</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            In B2C industries (such as the automotive industry), having the capability of putting your customers into subgroups helps in 2 ways:
+
+                        <br>
+                        <br>
+                            <b>1. <u>Helps in decreasing customer acquisition costs</u> </b>
+                            by creating niche groups inside
+                             a big dataset, so as to understand what kind of product will be liked by which kind of people. 
+                             If companies know what will their audience like and not like, then they can do better-targeted marketing.
+                        <br>
+                        <br>    
+                            CAC (Customer Acquisition Cost) has been increasing in the past few years and becoming 
+                            a “real threat” as quoted by Maruti Chairman R.C. Bhargava. Thus if a company decides 
+                            to build a car and can have cheaper methods of acquiring customers then they can price themselves
+                            better than the competition. 
+                        </p>
+
+                        <p class="lead mb-5">
+                            <b>2. <u>Helps in designing the product and understand the prospective market</u></b> 
+                             by letting the manufacturer know the current demands and pain points of the customers. 
+                            Also helps in forming clusters of consumers that might be interested in specific
+                            combinations of products just by understanding their previous purchase decisions.
+                            
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                     
+        <!-- Segmentation Button-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="mb-5">Segmenting the Indian Automobile Customer</h2>
+                    <h3 class="text-secondary mb-0">On the basis of:</h3>
+                    <br>
+
+                    <br><br>
+                            <strong>
+                            1.Demographics
+                            <br><br><br>
+                            2.Behavioural Analysis
+                            <br>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Customer analysis on the basis of demographics-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-9 px-lg-9">
+                <div class="row gx-9 gx-lg-9">
+                    <div class="col-lg-12">
+                        <h2>Customer Analysis on the basis of demographics</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            Demographic analysis is understanding the socio-economic attributes of a
+                             population such as age, sex, income, employment etc. The problem with 
+                             demographic segmentation is understanding the weightage of these attributes in your
+                              industry vertical. 
+                            <br><br>
+                            Now, in automobile industry the variables for which correlation is
+                            important to find appropriate segmentations are:
+                            <br><br>
+                            <strong>
+                                1.Age, income & price of car currently using.
+                        
+                            <br><br>
+                            
+                                2.Capacity of taking loans and whether it’s affecting car prices.
+                            
+                            <br><br>
+                            
+                                3.No. of dependencies and at what age do they arrive.
+                           
+                            <br><br>
+                                4.Average price of car customers are driving according to their profession.
+                            
+                            </strong>
+                             
+                        </p>
+                        <hr>
+                            <br>
+                            <h3><center><u>Age, Income & Price of car currently using</u></center></h3>
+                            <br>
+
+                        <p class="lead mb-5">
+                            The Demographics of Consumers that are currently using cars can help in understanding our customer better.
+                            Plotting Age, income and
+                             price of car they're currently using gives us a rough idea as to what the correlation might be.
+                             <br><br>
+                               <!--1.1 ADD CHART OF BASIC 3D SCATTER PLOT {have been made} --> 
+                               <div id="chart1"></div>
+                               <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                               <script type="text/javascript">
+                               var graph1 = {{graph1JSON | safe}};
+                               Plotly.plot("chart1",graph1,{});
+                               </script>
+                               <br>
+                               
+                            But creating sub groups
+                             will help us achieve the goal of ::<strong> Identifying with high accuracy the estimated price
+                             of car that a person at a specifc age and income might buy.</strong>
+                        </p>    
+                             <br>
+
+
+                        <h4>1.1 Achieving the goal using K-Means Clustering</h4>
+                        <p class="lead mb-5">
+                            Clustering Data can be achieved using K-Means clustering along with elbow method. 
+                            This shows that the perfect number of clusters for our dataset are 5.
+                            <!-- 1.2 ELBOW GRAPH  {have been made}-->
+                            <br>
+                            <div id="chart2"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph2 = {{graph2JSON | safe}};
+                            Plotly.plot("chart2",graph2,{});
+                            </script>
+
+                            <br><br>
+                            Therefore after clustering the data according to the K value of 5, The clusters that are formed are::
+                            <!-- 1.3 K-means cluster  {have been made}-->
+                            <br>
+                            <div id="chart3"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph3 = {{graph3JSON | safe}};
+                            Plotly.plot("chart3",graph3,{});
+                            </script>
+                            <br><br>
+                            Now you can just hover over the Clusters and identify the distinctness and correlations between the segmented data.
+                            <br><br>
+                           
+
+                        </p>    
+
+
+                        <h4>1.2 Achieving the goal using Linear Regression Analysis</h4>
+                        <p class="lead mb-5">
+                           Linear Regression can be used to ensure the actual 
+                           dependancy and intensity of dependancy of a dependent variable on an independent variable.
+                           <br>
+                           In this case the independent variable is: <strong>income</strong> and dependent variable is 
+                           <strong>price of current car</strong>
+                           <!-- 1.4 Liner Regression-->
+
+                           <div id="chart4"></div>
+                           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                           <script type="text/javascript">
+                           var graph4 = {{graph4JSON | safe}};
+                           Plotly.plot("chart4",graph4,{});
+                           </script>
+
+                           <br><br>
+                           
+                        </p>    
+                        
+
+                        <hr>
+                        <br>
+                        <h3><center><u>Capacity of Taking Loans and whether it's affecting car purchase behaviour</u></center></h3>
+                         <br>
+                        <p class="lead mb-5">
+                            Car purchasing is an expensive ordeal and in a country like India where prices of cars are way
+                            above the annual income of many households, undesrstanding the capacity and willingness of consumers to
+                            take loans helps us understand how probable a person will be to spend beyond their annual income and whether 
+                            having prior loans makes the person more probable of buying more expesnive cars at the same income level.
+
+                            <br><br>
+                            Now we can achieve this goal in an iterative analysis:
+                        </p>
+                            <h4>2.1 Achieving the goal using comparitive plotting</h4>
+                        <p class="lead mb-5">
+                            The histogram chart represents the Percentage of people who have loans, and out of those how many have 
+                            home loans or personal loans. This shows that majority of the earning population is willing to take loans.
+                            <br>
+                            <!-- Histogram Plot -->
+                            <div id="chart5"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph5 = {{graph5JSON | safe}};
+                            Plotly.plot("chart5",graph5,{});
+                            </script>
+
+                            <br><br>
+                            <div id="chart6"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph6 = {{graph6JSON | safe}};
+                            Plotly.plot("chart6",graph6,{});
+                            </script>
+                            
+                            <br><br>
+                            <div id="chart7"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph7 = {{graph7JSON | safe}};
+                            Plotly.plot("chart7",graph7,{});
+                            </script>
+                            <br>
+ 
+                        </p>
+                            <h4>2.2 Finding correlation in Salary Vs. Price and affect of loans on it</h4>
+                        <p class="lead mb-5">
+                            To accomplish this we've used multi-coloured scatter plots to understand two secanarios.
+                            <br>
+                            Plotting scatter plot of salary vs price for:
+                            <br><br>
+                            <div id="chart8"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph8 = {{graph8JSON | safe}};
+                            Plotly.plot("chart8",graph8,{});
+                            </script>
+ 
+                            <br><br>
+                            
+                        </p>
+
+                        <hr>
+                        <h3><center><u>Number of Codependencies and at what age do they arrive</u></center></h3>
+                        <br>
+                        <p class="lead mb-5">
+                            Knowing the size of families and understanding the age at which the size of family increases is significant in identifying 
+                            the type of automobile a person might buy. That is, a person with more dependecies will requrie a bigger car with more seats whereas
+                            people with smaller family sizes will be fine with cars with less seating capacity.
+                            <br>
+                            So having an verified assumption will help us create a vehicle for which we'll know the target customer. For example, if we're making
+                            an SUV we'll know that that'll suit more for people with more Codependencies. Therefore we'll have an idea of customer segment size for whom 
+                            such a product will be a perfect fit.
+                            <br><br>
+
+                            To achieve this we'll plot a boxplot to see ranges of family size in comparison of a person's respective age:
+                            <!-- BOX PLOT for age, codependencies 9-->
+                              
+                            <br><br>
+                            <div id="chart9"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph9 = {{graph9JSON | safe}};
+                            Plotly.plot("chart9",graph9,{});
+                            </script>
+ 
+                            
+                            <br><br>
+                            
+
+                        </p>
+
+                        <hr>
+                        <h3><center><u>Profession and it's correlation with price of car</u></center></h3>
+                        <br>
+                        <p class="lead mb-5">
+                           Profession analysis will help us categorise the percentage of earning that people are willing to spend
+                           and whether it has any correlation with their profession or not.
+
+                            To achieve this we will:
+                            <br><br>
+                        </p>
+                        <h4>4.1 Understand the quantity of people who are employed compared to number of people who have their own businesses</h4>
+
+                            <!--Bar graph for both profession 10-->
+                              
+                            <br><br>
+                            <div id="chart10"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph10 = {{graph10JSON | safe}};
+                            Plotly.plot("chart10",graph10,{});
+                            </script>
+ 
+                        <p class="lead mb-5">
+
+
+
+                        </p>
+
+                        <h4>4.2 Understand the coefficient of correlation in purchasing power compared to profession</h4>
+                        <!-- Facet Graph 11-->
+                          
+                        <br><br>
+                        <div id="chart11"></div>
+                        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                        <script type="text/javascript">
+                        var graph11 = {{graph11JSON | safe}};
+                        Plotly.plot("chart11",graph11,{});
+                        </script>
+
+                        
+
+                        <p class="lead mb-5">
+
+
+
+                       
+                            
+
+                        <br><br>
+                      
+
+                        </p>
+
+
+<hr><br><br>
+                        <h2>Customer Analysis on the basis of behaviour</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            Behavioural segmentation is important to answer the question of "How does a person make decisions
+                            and what are the sentiments that a person gives weightage to while making that purchase. In the automobile
+                            industry pre purchase decisions and post purchase sentiments have significant influence on the brand image."
+
+                            <br><br>
+
+                            Now to analysis Behavioural aspects of humans we will understand two aspects:
+
+                            <br><br>
+                            
+                                1. Technical Saviness Analysis of Customers
+                           
+                            <br><br>
+                           
+                                2.Sentiment Analysis of pre and post purchase decisions of Customers
+                            
+                            
+                            <hr>    
+                            <br>
+                            <h3><center><u>Technical Saviness Analysis of Customers</u></center></h3>
+                            <br>
+
+                        <p class="lead mb-5">
+                            In today's world understanding the technological expectations of a consumers from a vehicle is paramount when buidling
+                            a new vehicle. This is because of the variety of consumers we have when it comes to technical saviness. Due to this reason 
+                            conusmers can be fragmented with their expectations in terms of technological features, direct relation between time spent interacting 
+                            with technology and saviness can be drawn. Therefore for segmentating customers we'll focus on the variability of time spent interacting with 
+                            technology.
+                            <br>
+                            This will be done in the following way:
+                            <br><br>
+                        </p>
+
+                            <h3>1.1 Time spent interacting with technology </h3>
+                            <!-- Bar graph of time spent 12-->
+
+                              
+                            <br><br>
+                            <div id="chart12"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph12 = {{graph12JSON | safe}};
+                            Plotly.plot("chart12",graph12,{});
+                            </script>
+ 
+                        <p class="lead mb-5">  
+                        
+                        Creating a two axis scatter plto to represent the number of people spread over their number of hours spent on social media.
+                        
+                        </p>
+                            <br><br>
+                            <h3>1.2 Income and technology interaction</h3>
+                        <p class="lead mb-5"> 
+                            We'll apply K means clustering to form clusters of people to understand type of consumers in terms of income and 
+                            time spent on technology.
+                            <!-- K means cluster between income and time spent on technology -->
+                              
+                            <br><br>
+                            <div id="chart14"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph14 = {{graph14JSON | safe}};
+                            Plotly.plot("chart14",graph14,{});
+                            </script>
+ 
+                            <br><br> Now we have accomplised the task of understanding different segments in the in costumer paradigm
+                        </p>   
+                            
+                            <hr>    
+                            <br>
+                            <h3><center><u>Sentiment Analysis of pre and post purchase decisions of Customers</u></center></h3>
+                            <br>
+                         <p class="lead mb-5">
+
+                            For this go to the "Launch Time" page of website for consumer sentiment analysis
+
+
+                         </p>   
+                            
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+         <!-- Scroll to Top Button-->
+         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+         <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="{{url_for( 'static', filename='scripts.js')}}"></script>
+     </body>
+ </html>
+ 

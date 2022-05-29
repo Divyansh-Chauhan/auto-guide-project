@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AG-Location Analysis</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for( 'static', filename='styles.css')}}" rel="stylesheet" />
+    </head>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Auto Guide</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('index.ind')}}">Home</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('specification.spec')}}">Car Specifications</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('segment.seg')}}">Customer Segmentation</a></li> 
+                <li class="sidebar-nav-item"><a href="{{url_for('location.loc')}}">Location Analysis</a></li>
+                <li class="sidebar-nav-item"><a href="{{url_for('timing.times')}}">Launch Time</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Location Analysis</h1>
+                <h3 class="mb-5"><em>Understand the country you're trying to sell in!</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+            </div>
+        </header>
+
+         <!-- Content-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-9 px-lg-9">
+                <div class="row gx-9 gx-lg-9">
+                    <div class="col-lg-12">
+                        <!-- What is Customer Segmentation-->
+                        <h2>What is Location Analysis?</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            Location analysis is understanding the attributes and 
+                            distinctiveness of the region you're trying to sell in
+                            on the basis of infrastructure and population that resides in that location
+                        </p>
+                        <br>
+                        <h2>Why it's important for the automotive industry to do location analysis?</h2>
+                        <br>
+                        <p class="lead mb-5">
+                        For the automotive industry, having an indepth knowledge of the location you're trying to sell in, helps in 2 ways:
+
+                        <br>
+                        <br>
+                            <b>1. <u>Gives the industry a better sense of what kind of product will be apt for what region</u> </b>
+                            as a product might be fitting in terms of the demographics and behvaiours of the population but might not be 
+                            operable in that certain location. For example: a car with very high engine power wouldn't sell where roads are not 
+                            good enough to take benefit out of it.
+                       
+                        </p>
+
+                        <p class="lead mb-5">
+                            <b>2. <u>Helps in deciding the regions where manufacturing units could be setup</u></b> 
+                            as the process of manufacturing is very intense and requires a lot of natural resources and tranportable resources.
+                            Therefore a place with even a more expensive intial setup cost might be worth it in the long term by reducing running Cost
+                            associated to it.
+                            
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                     
+        <!-- Segmentation Button-->
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h2 class="mb-5">Segmenting the Indian States</h2>
+                    <h3 class="text-secondary mb-0">On the basis of:</h3>
+                    <br>
+                    <br><br>
+                    <strong>
+                    1.Where to sell?
+                    <br><br><br>
+                    2.Where to make?
+                    <br>
+
+
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- Customer analysis on the basis of demographics-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-9 px-lg-9">
+                <div class="row gx-9 gx-lg-9">
+                    <div class="col-lg-12">
+                        <h2>Location Analysis for the purpose of sales</h2>
+                        <br>
+                        <p class="lead mb-5">
+                           Analysis locations for the purpose of sales can be done in a few ways, automotive sales can be done
+                           by categorising the population, or by categorising by geographical features of that place.
+                            <br><br>
+                            Now, to implement this given understanding we will focus on: 
+                            <br><br>
+                                1.Population densities and market size.
+                            <br><br>
+                                2. Common predictive traits of population.
+                            <br><br>
+                             
+                        </p>
+                        <hr>
+                            <br>
+                            <h3><center><u>Population densities and market size</u></center></h3>
+                            <br>
+
+                        <p class="lead mb-5">
+                            India is a very diverse countries with some places having a lot of market potential and some still in their budding phases.
+                            Therefore to tackle this, we'll analyse size of populations as well as densities of those populations.
+                             <br><br>
+                        </p>    
+                             <br>
+
+
+                        <h4>1.1 Achieving the goal of population visualisations using choropleth mapping</h4>
+                        <p class="lead mb-5">
+                            Aggregation of total populations per state gives us an initial overview as to the total market size 
+                            of states that we have.
+
+                            <!-- map of total population -->
+                            <br><br>
+                            <div id="chart1"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph1 = {{graph1JSON | safe}};
+                            Plotly.plot("chart1",graph1,{});
+                            </script>
+                            <br><br>
+                            <strong>CONCLUSIONS DRAWN: Uttar pradesh is the state with highest number of population</strong> 
+
+                        </p>    
+
+
+                        <h4>1.2 Achieving the goal of relative market size</h4>
+                        <p class="lead mb-5">
+                           Now a lot of states have very high populations but their huge area coverage makes it more expensive 
+                           to accomplish efficient sales. So for efficient sales we'll see the states which have high population densities
+                           as those are the states with relatively bigger market size.
+
+                           <br><br> Another qualitative analysis which can be from this data is that places with very high population densities
+                           are very crowded and have already been tapped by other automakers, so due to overcrowding such places will prefer cars
+                           which are smaller and easy to use.
+
+                           <!-- population density graph-->
+                           <br><br>
+                            <div id="chart2"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph2 = {{graph2JSON | safe}};
+                            Plotly.plot("chart2",graph2,{});
+                            </script>
+
+                           <br><br>
+                            <strong>CONCLUSIONS DRAWN: Delhi has one of the highest dense populations</strong>
+
+                        </p>    
+                        
+
+                        <hr>
+                        <br>
+                        <h3><center><u> Common predictive traits of population</u></center></h3>
+                         <br>
+                        <p class="lead mb-5">
+                            Population in india is very diverse as we've already understood through our costumer segmentation section.
+                            But the influence of societal and geogrpahical on their purchasing decision helps having a better understanding
+                            of the same
+                            <br><br>
+                            Now we can achieve this goal by:
+                        </p>
+                            <h4>2.1 Understanding the conservative nature of a population</h4>
+                        <p class="lead mb-5">
+                            In a country like India we need to understand that a part of the population is conservative as well as the other
+                            part is very liberal in terms of trying new things. Now a good way to measure the societal development of a state is to 
+                            see it's sex ratio as usually the states with better sex ratios have more educated population.
+
+                            <br>
+                            These educated populations of todays generation are usually early adopters of technology, such as EV.
+                            Therefore to predict this, we'll map Indian states in terms of their sex ratios.
+
+                            <!-- map of sex ratio -->
+                            <br><br>
+                            <div id="chart3"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph3 = {{graph3JSON | safe}};
+                            Plotly.plot("chart3",graph3,{});
+                            </script>
+                            <br><br>
+                            <strong>CONCLUSIONS DRAWN: Kerala is a good place to try out new technological trends due to it's non conservative nature</strong>
+                        </p>
+
+                      
+
+
+<hr><br><br>
+                        <h2>Location Analysis for the purpose of manufacturing</h2>
+                        <br>
+                        <p class="lead mb-5">
+                            When it comes to automotive manufacturing the major factor that comes into play is connectivity in terms of
+                            roads and highways. Also the location of setup in terms of relative distance with the states near it which are it's probable
+                            market is also important.
+
+                            <br><br>
+
+                            Now to analyse these given aspects, we will understand:
+
+                            <br><br>
+                                1. Road Density in Indian States
+                            <br><br>
+                                2. Distance calculation with probable market
+                            
+                            <hr>    
+                            <br>
+                            <h3><center><u>Road Density in Indian States</u></center></h3>
+                            <br>
+
+                        <p class="lead mb-5">
+                            Area alotted to every state in India is very diverse and so is the terrain. Now roads have been laid out in many states but
+                            comparing length of those roads will be irrelevent as it's not taking the area of the state into account. 
+                            <br>
+                            So the solutin that can be implemented is: 
+                            <br><br>
+                        </p>
+
+                            <h3>1.1 Plotting Road Densities Statewise </h3>
+                            <!-- map with road densities -->
+                            <br><br>
+                            <div id="chart4"></div>
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <script type="text/javascript">
+                            var graph4 = {{graph4JSON | safe}};
+                            Plotly.plot("chart4",graph4,{});
+                            </script>
+                            <br><br>
+                        <p class="lead mb-5">  
+                        
+                            Road densities are plotted using the formula: Total length of road per 100km2 of area.
+                            This provides us with the most appropriate estimate as to which state is most well connected to handle the 
+                            supply chain of manufacturing automobiles.
+                        </p>
+                            <br><br>
+                            <h3>1.2 Calculating distances with your probable market</h3>
+                        <p class="lead mb-5"> 
+                            As an idea of probable market has already been made in the section above, so now you can enter in the 
+                            latitudinal and longitudinal values of your probable market and your probable manufacturing unit to calculate
+                            distances between them:
+                            
+                            <br><br>
+                            Get the latitude and longitude values for entering in the haversine calculator from <a href="https://www.latlong.net/" target="blank"><strong>this website</strong></a>
+                            <br><br>
+                            
+                            <form method="POST">
+                                <p>Enter latitude and Longitude For factory location & Sales Location: </p><br>
+                                
+                                <p>Enter latitude of manufactoring location:</p>
+                                <input name ="FacLat"><br><br>
+                                <p>Enter longitude of manufactoring location:</p>
+                                <input name ="FacLot"><br><br>
+                                <p>Enter latitude of sales location:</p>
+
+                                <input name ="SalLat"><br><br>
+                                <p>Enter longitude of sales location:</p>
+
+                                <input name ="SalLot"><br><br>
+                                <input type = "submit"><br>
+                            </form>
+                            <u><strong><p> Distance between location is {{variable}} Km</p><strong></u>
+
+                            <!-- Calculator for coordinates -->
+                            <br><br> Now we can clearly understand the diversity of the Indian terrian both in terms of where to sell and where to build.
+                        </p>  
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+         <!-- Scroll to Top Button-->
+         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+         <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="{{url_for( 'static', filename='scripts.js')}}"></script>
+     </body>
+ </html>
