@@ -6,7 +6,7 @@ Greetings,
 This website has been made to solve problem statement 2, that is the "data analysis" project. 
 
 
-#####Now the steps to Run the website:
+## Now the steps to Run the website:
 
 >  pip install requirements.txt
 
@@ -27,7 +27,7 @@ then once requirements are installed. Kindly run the "app.py" and open the websi
 
 that should provide access to the complete website.
 
-Key features of the website are:
+###### Key features of the website are:
 
 
 --> BERT Deep learning sentiment analysis from tweets to understand what is the emotion of something in the market and what all bad things are being said about it. This is done in real time according to the input that the person provides the search attribute and number of tweets that are to be gathered in real time.
