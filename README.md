@@ -12,7 +12,11 @@ This website has been made to solve problem statement 2, that is the "data analy
 
 if any error occurs in installing wordcloud library kindly Try these steps:
 
-Download the .whl file compatible with your Python version and your windows distribution (32bit or 64bit) from here
+Download the .whl file compatible with your Python version and your windows distribution (32bit or 64bit) from here:
+
+
+"https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud"
+
 cd to the file path
 Run this command  
 >  python -m pip install filename
